@@ -1,0 +1,89 @@
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  h2 {
+    margin-top: 20px;
+  }
+  
+  #juegos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .juego {
+    width: calc(25% - 40px);
+    margin: 20px;
+    border: 1px solid #ccc;
+    text-align: center;
+  }
+  
+  .juego img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .detalle {
+    background-color: transparent;
+    padding: 10px;
+  }
+  
+  .detalle h3 {
+    margin-top: 0;
+  }
+  
+  .detalle button {
+    margin-top: 10px;
+  }
+  
+  #carrito {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  #registro {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  table, th, td {
+    border: 1px solid black;
+  }
+  
+  th, td {
+    padding: 8px;
+  }  
+
+  body{
+	background-image: url(img/ooo.jpg);
+	background-size: cover;
+  }
+
+  footer {
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: transparent;
+  }
+
+  #volverBtn {
+    background-color: transparent;
+    color: rgb(0, 0, 0);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    border: 2px solid rgb(0, 0, 0);
+  }
+  
+  #volverBtn:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+  }

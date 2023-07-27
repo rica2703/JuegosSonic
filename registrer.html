@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="registrer.css">
+</head>
+<body>
+    <section class="form-main">
+        <div class="form-content">
+       
+            <div class="box">
+                <h3>Crear una cuenta</h3>
+                <div class="form-body"> 
+                    <center> <img src="img/usuario.png" alt="usuario"> </center>
+ 
+                 </div>
+                
+
+                <form action="">
+
+                    <div class="input-box">
+                        <input id="nombre" type="text" placeholder="Nombre(S)" class="input-control" required>
+                    </div>
+
+                    <div class="input-box">
+                        <input type="text" placeholder="Apellido(S)" class="input-control" required>
+                    </div>
+
+                    <div>
+                        <input type="number" min="9" max="9999999999" placeholder="Número Telefonico" class="input-control" required>
+                        <div> 
+
+                        </div>
+
+                        <div class="input-box">
+                            <input id="correo" type="email" placeholder="Correo Electrónico" class="input-control" required>
+                        </div>
+
+                        <div class="input-box">
+                            <input id="contraseña" type="password" placeholder="Contraseña" class="input-control" required>
+
+                        </div>
+
+                        <div class="input-box">
+                            <input type="password" placeholder="Confirmar Contraseña" class="input-control" required>
+                        </div>
+
+                        <input type="text" placeholder="Dirección" class="input-control" required>
+                    </div>
+
+                    <br>
+                    <button onclick="guardar()" type="submit" class="btn">Crear cuenta</button>
+                    <br>
+                </form>
+                
+                <p>Ya tienes una cuenta? <a href="login.html" class="gradient-text"> Iniciar Sesión</a></p>
+
+            </div>
+        </div>
+    </section>
+    <footer><script src="registrer.js"></script></footer>
+</body>
+</html>

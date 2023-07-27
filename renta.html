@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sistema de Renta de Juegos</title>
+  <link rel="stylesheet" type="text/css" href="renta.css">
+</head>
+<body>
+  <h1>Sistema de Renta de Juegos</h1>
+  
+  <div id="juegos">
+    <div class="juego">
+      <img src="img/sonic-adventure-2.jpg" alt="Sonic Adventure 2">
+      <div class="detalle">
+        <h3>Sonic Adventure 2</h3>
+        <p>Precio: $80</p>
+        <button onclick="agregarAlCarrito(1, 80)">Agregar al carrito</button>
+        <button onclick="cancelarJuego(1)">Cancelar</button>
+      </div>
+    </div>
+    
+    <div class="juego">
+      <img src="img/sonic unleashed.jpg" alt="Sonic Unleashed">
+      <div class="detalle">
+        <h3>Sonic Unleashed</h3>
+        <p>Precio: $120</p>
+        <button onclick="agregarAlCarrito(2, 120)">Agregar al carrito</button>
+        <button onclick="cancelarJuego(2)">Cancelar</button>
+      </div>
+    </div>
+    
+    <div class="juego">
+      <img src="img/sonic frontiers.webp" alt="Sonic Frontiers">
+      <div class="detalle">
+        <h3>Sonic Frontiers</h3>
+        <p>Precio: $150</p>
+        <button onclick="agregarAlCarrito(3, 150)">Agregar al carrito</button>
+        <button onclick="cancelarJuego(3)">Cancelar</button>
+      </div>
+    </div>
+  </div>
+  
+  <h2>Carrito de compras</h2>
+  <ul id="carrito"></ul>
+  
+  <h2>Resumen de la renta</h2>
+  <p>Total: <span id="total">0</span></p>
+  
+  <h2>Fecha de devolución</h2>
+  <input type="date" id="fecha-devolucion">
+  
+  <button onclick="registrar()">Finalizar renta</button>
+  <h2>Registro de rentas</h2>
+  <button onclick="resetearTabla()">Resetear tabla</button>
+  
+  <h2>Registro de rentas</h2>
+  <table id="registro">
+    <thead>
+      <tr>
+        <th>Juego</th>
+        <th>Precio</th>
+        <th>Fecha de devolución</th>
+      </tr>
+    </thead>
+    <tbody>
+    </tbody>
+  </table>
+  
+  <script src="renta.js"></script>
+
+  <footer>
+    <a href="menu.html"id="volverBtn">Volver al menú</a>
+  </footer>
+  
+</body>
+</html>
